@@ -1,1 +1,10 @@
 c:\users\rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\bin\Debug\leaderTest.exe.config
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\bin\Debug\leaderTest.exe
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\bin\Debug\leaderTest.pdb
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\bin\Debug\MySql.Data.dll
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.csprojResolveAssemblyReference.cache
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.Form1.resources
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.Properties.Resources.resources
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.csproj.GenerateResource.Cache
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.exe
+C:\Users\Rhuan\documents\visual studio 2015\Projects\leaderTest\leaderTest\obj\Debug\leaderTest.pdb
