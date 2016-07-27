@@ -14,20 +14,70 @@ namespace leaderTest
     public partial class Form1 : Form
     {
 
-
-        // global variaables
-        private string conn;
-        private MySqlConnection connect;
-
-
+        /// Init the form
         public Form1()
         {
             InitializeComponent();
         }
 
 
+
+        // global variaables for database
+        private string conn;
+        private MySqlConnection connect;
+
+
+
+        //variables for the questions
+         private void questionField(object sender, EventArgs e)
+        {
+
+            //string userName;
+            string a = Q1.Text;
+            string b = Q2.Text;
+            //string c;
+            //string d;
+            //string e;
+            //string f;
+            //string g;
+            //string h;
+            //string i;
+            //string j;
+
+            int userValue = 0;
+            string callName = "";
+
+
+            userValue += calculateUser(a);
+            userValue += calculateUser(b);
+
+
+        }
+
+
+        
+        // function to calculate the points        
+        public static int calculateUser(string userInput)
+        {
+            int score = 0;
+
+            if (userInput == "yes")
+            {
+                return score += 10;
+            }
+            else if (userInput == "no")
+            {
+                return score -= 5;
+            }
+            else
+            {
+                return score -= 1;
+            }
+        }
+
+
         // function for the database connect
-        private void db_connection()
+        public void db_connection()
         {
             try
             {
@@ -43,6 +93,56 @@ namespace leaderTest
 
 
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // connection with the database
+            db_connection();
+            MySqlCommand cmd = new MySqlCommand();
 
+            // select the user where user is igual current user
+            cmd.CommandText = "Select * from users where username=@user and password=@pass";
+            cmd.Parameters.AddWithValue("@user", Q1);
+            cmd.Parameters.AddWithValue("@pass", Q2);
+            cmd.Connection = connect;
+            MySqlDataReader login = cmd.ExecuteReader();
+        }
+
+   
+        // windows form function buttons
+
+        private void Q1_TextChanged(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void Q2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

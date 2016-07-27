@@ -1,3 +1,32 @@
+-------------------------------------------------------------------------------
+
+step 1 - Rhuan
+//leaderTest app
+//ask question 1-10 and send each question through calculator
+
+step 2 -
+
+//send user name; score; & rank to DataBase
+
+step 3
+
+//leaderTestAdmin
+//pull user name; score; & rank into object array from DB
+
+step 4
+
+//send array through algorithm
+//group each person into groups
+
+step 5
+
+//display groups
+
+
+
+===========================================================
+
+
 step 1
 
 // Database - insert into database
@@ -16,27 +45,3 @@ step 3
 step 4
 
 //take the result of group and store in a new table meanwhile making a relation with the people table
-
--------------------------------------------------------------------------------
-
-step 1
-//leaderTest app
-//ask question 1-10 and send each question through calculator
-
-step 2
-
-//send user name; score; & rank to DataBase
-
-step 3
-
-//leaderTestAdmin
-//pull user name; score; & rank into object array from DB
-
-step 4
-
-//send array through algorithm
-//group each person into groups
-
-step 5
-
-//display groups

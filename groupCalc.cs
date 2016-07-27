@@ -49,6 +49,8 @@ namespace ConsoleApplication1
             Console.WriteLine("q10.) It's okay when things don't go my way. (yes / no / not sure):");
             j = Console.ReadLine();
 
+
+
             userValue += calculateUser(a);
             userValue += calculateUser(b);
             userValue += calculateUser(c);
