@@ -13,11 +13,13 @@ namespace leaderTest
 {
     public partial class Form1 : Form
     {
+        GenerateGroups generateGroups = new GenerateGroups(10);
 
         /// Init the form
         public Form1()
         {
             InitializeComponent();
+           int x = generateGroups.count;
         }
 
 
@@ -100,9 +102,9 @@ namespace leaderTest
             MySqlCommand cmd = new MySqlCommand();
 
             // select the user where user is igual current user
-            cmd.CommandText = "Select * from users where username=@user and password=@pass";
-            cmd.Parameters.AddWithValue("@user", Q1);
-            cmd.Parameters.AddWithValue("@pass", Q2);
+            cmd.CommandText = "insert into people (name, score) Values ('joe', '5')";
+            //cmd.Parameters.AddWithValue("@user", Q1);
+            //cmd.Parameters.AddWithValue("@pass", Q2);
             cmd.Connection = connect;
             MySqlDataReader login = cmd.ExecuteReader();
         }
