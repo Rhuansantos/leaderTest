@@ -36,7 +36,8 @@ namespace leaderTest
 
             //string userName;
             string a = Q1.Text;
-            string b = Q2.Text;
+            string [] b = {Q2_yes.Text, Q2_no.Text, Q2_notSure.Text};
+            string [] names = new string[3] { "Matt", "Joanne", "Robert" };
             //string c;
             //string d;
             //string e;
@@ -46,12 +47,12 @@ namespace leaderTest
             //string i;
             //string j;
 
-            int userValue = 0;
-            string callName = "";
+            //int userValue = 0;
+            //string callName = "";
 
 
-            userValue += calculateUser(a);
-            userValue += calculateUser(b);
+            //userValue += calculateUser(a);
+            //userValue += calculateUser(b);
 
 
         }
@@ -137,14 +138,9 @@ namespace leaderTest
 
         }
 
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }

@@ -62,7 +62,7 @@ namespace ConsoleApplication1
             userValue += calculateUser(i);
             userValue += calculateUser(j);
 
-
+           
 
 
             if (userValue <= 30)
